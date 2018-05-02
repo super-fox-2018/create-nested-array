@@ -6,7 +6,7 @@ var createNestedArr = (Row,Col) => {
     for(var i = 0 ; i < Row ; i++){
         output[i] = []
         for(var j = 0; j < Col ; j++){
-            output[i].push(alphabet[parseInt(Math.random()*25)])
+            output[i].push(alphabet[parseInt(Math.random()*alphabet.length-1)])
         }
     }
     return output
